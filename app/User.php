@@ -31,7 +31,22 @@ class User extends Authenticatable
 
     public function images()
     {
-        return $this->hasMany('App\UserImage', 'id', 'userId');
+        return $this->hasMany('App\UsersImage', 'userId', 'id');
+    }
+
+    public function offersGirlAcc()
+    {
+        return $this->hasMany('App\OfferAll', 'girlId', 'id')->where('status',2);
+    }
+
+    public function offersGirlDen()
+    {
+        return $this->hasMany('App\OfferAll', 'girlId', 'id')->where('status',1);
+    }
+
+    public function offersGirlWait()
+    {
+        return $this->hasMany('App\OfferAll', 'girlId', 'id')->where('status',0);
     }
 
 

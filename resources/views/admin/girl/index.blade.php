@@ -25,11 +25,15 @@
                     <th>Status naloga</th>
                     <th>Slike devojke</th>
                     <th>Ponude</th>
+                    <th>Odbijene</th>
+                    <th>Prihvacene</th>
+                    <th>Na cekanju</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($items as $item)
+
                     <tr id="{{ $item->id }}" class="{{ $item->deleted_at ? 'danger' : ''}}">
                         <td>{{$item->fullName}}</td>
                         @if($item->status == 1)
@@ -39,7 +43,10 @@
                         @endif
 
                         <td><a href="{{route("admin.devojka.galerija", $item->id)}}">Pogledaj slike</a></td>
-                        <td><a href="">Pogledajte ponude</a></td>
+                        <td><a href="{{route('admin.girl.offers', $item->id)}}">Pogledajte ponude</a></td>
+                        <td>{{$item->offersGirlDen()->count()}}</td>
+                        <td>{{$item->offersGirlAcc()->count()}}</td>
+                        <td>{{$item->offersGirlWait()->count()}}</td>
                         <td class="cms-column-actions">
                             <div class="btn-group btn-group-xs cms-table-actions">
                                 <a href="{{ route('admin.devojka', $item->id) }}" type="button" class="btn btn-default"><span class="entypo entypo-pencil"></span></a>

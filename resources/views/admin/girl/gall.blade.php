@@ -13,7 +13,6 @@
         </div>
         <div class="cms-options-filter">
 
-
             {!! admin_reorder_link() !!}
         </div>
     </div> <!-- =cms-options -->

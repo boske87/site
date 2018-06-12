@@ -24,10 +24,11 @@ function admin_sort_links($name)
 function admin_reorder_link($title = 'Reorder Items')
 {
     $route = Route::currentRouteName();
+
     $getParameters = Request::except('sortBy', 'order');
 
     $link = '<a class="cms-options-filter-action btn btn-success pull-right" type="button"'
-        . ' href="' . route($route, ['reorder_mode' => 1] + $getParameters) . '">'
+        . ' href="?reorder_mode=1">'
         . '<span class="entypo entypo-list"></span> ' . $title
         . '</a>';
 

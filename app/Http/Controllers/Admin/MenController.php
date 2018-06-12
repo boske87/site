@@ -11,6 +11,7 @@ class MenController extends Controller
 {
     public function index()
     {
+
         $items = User::where('type','1')->get();
 
         return view('admin.men.index', compact('items'));

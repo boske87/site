@@ -13,7 +13,7 @@ class GirlGallController extends Controller
     use UploadService;
     public function gallery($id)
     {
-        $items = UsersImage::where('userId', $id)->get();
+        $items = UsersImage::where('userId', $id)->orderby('ordering','ASC')->get();
         $user = User::find($id);
         return view('admin.girl.gall', compact('items','user'));
     }
