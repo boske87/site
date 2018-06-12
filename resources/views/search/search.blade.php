@@ -322,7 +322,7 @@
                         </div>
                         <!-- row -->
 
-
+                        @if(!empty($input))
                         <div class="vd_content-section clearfix">
                                 <!-- row -->
                                 <div class="row">
@@ -372,6 +372,7 @@
                             <!-- .vd_content-section -->
 
                         </div>
+                    @endif
 
                         <!-- .vd_content -->
                 </div>

@@ -35,6 +35,7 @@ class GirlController extends Controller
     {
         $input = $request->all();
         $input['type'] = '0';
+        $input['password'] = bcrypt($input['password']);
         User::create($input);
 
         return redirect()->route('admin.devojke')->withFlashMessage("Uspesno dodavanje nove devojke.")->withFlashType('success');

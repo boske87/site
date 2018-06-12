@@ -26,6 +26,7 @@ class MenController extends Controller
     {
         $input = $request->all();
         $input['type'] = '1';
+        $input['password'] = bcrypt($input['password']);
         User::create($input);
         return redirect()->route('admin.men')->withFlashMessage("Uspesno dodavanje novog muskarca.")->withFlashType('success');
 

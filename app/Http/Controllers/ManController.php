@@ -112,6 +112,8 @@ class ManController extends Controller
             }
         }
 
+
+
         $langNew = array_unique($langNew);
 
         return view('search.search', compact('girls',  'city', 'job', 'langNew', 'input'));
