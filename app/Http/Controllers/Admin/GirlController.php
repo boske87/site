@@ -46,6 +46,7 @@ class GirlController extends Controller
     {
         $user = User::find($id);
         $input = $request->all();
+        $input['password'] = bcrypt($input['password']);
         $user->update($input);
 
         return redirect()->route('admin.devojke' )->withFlashMessage("Uspesno izmenjen profil devojke.")->withFlashType('success');

@@ -24,6 +24,8 @@ class OfferController extends Controller
     public function getOfferById($offerId){
         $item = Offer::find($offerId);
 
+
+
         return view('admin.girlOffers.detailsOffer', compact('item'));
     }
 }

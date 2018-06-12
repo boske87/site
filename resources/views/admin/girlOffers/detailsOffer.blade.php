@@ -202,7 +202,7 @@
             <!-- =tab-content -->
             <div class="row">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <a href="{{route('admin.men')}}" class="btn btn-link pull-right">Vracanje nazad</a>
+                    <a href="{{ URL::previous() }}" class="btn btn-link pull-right">Vracanje nazad</a>
                 </div>
             </div>
         </div>

@@ -128,7 +128,9 @@ class ManController extends Controller
     public function manOffers(){
         $user = Auth::user();
 
-        $offers = Offer::where('manId', $user->id)->get();
+        $offers = Offer::where('manId', $user->id)
+            ->orderBy('created_at', 'DESC')
+            ->get();
 
 
         return view('offerMan.offers', compact('offers', 'user'));
