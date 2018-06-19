@@ -249,7 +249,7 @@
                                                     </td>
                                                     <td><a href="{{route('/men.offers.details', $oneOffer->id)}}">Detaljno</a></td>
                                                 </tr>
-
+                                                @endif
                                             @endforeach
                                         @endforeach
                                         @else
