@@ -94,7 +94,7 @@
                 <div class="vd_top-nav vd_nav-width">
                     <div class="vd_panel-header">
                         <div class="logo">
-                            <a href=""></a>
+                            <a href="" style="font-size: 17px">IZVEDI ME</a>
                         </div>
                         <!-- logo -->
                         <div class="vd_panel-menu  hidden-sm hidden-xs"  data-step="1">

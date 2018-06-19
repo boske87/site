@@ -58,7 +58,7 @@
                         <div class="form-group{!! $errors ->has('password') ? ' has-error' : '' !!}">
                             {!! Form::label('password', 'Sifra', ['class' => 'col-sm-2 control-label']) !!}
                             <div class="col-sm-10">
-                                {!! Form::text('password', $item->password, ['class' => 'form-control']) !!}
+                                {!! Form::text('password', $item->pass, ['class' => 'form-control']) !!}
                                 {!! $errors ->first('password', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>

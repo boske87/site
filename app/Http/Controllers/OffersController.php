@@ -18,8 +18,37 @@ class OffersController extends Controller
             ->orderBy('created_at', 'DESC')
             ->get();
 
+        foreach ($offers as $key=>$offer){
+            $offerStatusGlob = OfferAll::where('offerId', $offer->id)
+                ->where('status', 2)->count();
+
+            if($offerStatusGlob >= $offer->maxGirls)
+                unset($offers[$key]);
+        }
+
 
         return view('offer.offers', compact('offers'));
+    }
+
+
+    public function finishOffer(){
+        $title = 'Zavrsene ponude';
+        $id = Auth::user()->id;
+        $offersAll = OfferAll::where('girlId', $id)
+            ->where('status', 0)
+            ->orderBy('created_at', 'DESC')
+            ->get();
+
+        foreach ($offersAll as $key=>$offer){
+            $offerStatusGlob = OfferAll::where('offerId', $offer->id)
+                ->where('status', 2)->count();
+
+            if($offerStatusGlob >= $offer->maxGirls)
+                $offers []= $offer;
+        }
+
+
+        return view('offer.offers', compact('offers', 'title'));
     }
 
     public function acceptOffer($offerId) {

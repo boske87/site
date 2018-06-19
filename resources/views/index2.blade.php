@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>datingdirect.com dating: Single? Meet Other Singles Looking For Love - Free Signup</title>
+    <title>Izvedi me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="pragma" content="no-cache">
     <meta name="robots" content="noydir, noodp">
@@ -13,9 +13,7 @@
     <link href="{{ asset('assets/front/index/bundle-2118ed14bc52494.css')}}" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="https://iliusstu-a.akamaihd.net/www.datingdirect.com/hpv/favico-1b81d4a9e30.ico" data-react-helmet="true">
     <link rel="canonical" href="https://www.datingdirect.com/" data-react-helmet="true">
-    <meta name="description" content="datingdirect.com is the premier dating and chat site in Europe. You can chat with and date a soulmate and love! Have great dates by talking directly via chat" data-react-helmet="true">
-    <meta name="keywords" content="date, dating, single, singles, love, chat, chatting, webcam, man, woman" data-react-helmet="true">
-    <script language="javascript" type="text/javascript" src="{{ asset('assets/front/index/logo.js')}}"></script>
+     <script language="javascript" type="text/javascript" src="{{ asset('assets/front/index/logo.js')}}"></script>
 </head>
 <body>
 <div id="root">
@@ -49,30 +47,59 @@
                     </div>
                 </section>
                 <section class="_3FzdflqsNbVCTTk9nAghhA" id="charter-frame">
-                    <section class="-ku4lJtwuQiyH_gzVUou8 _1FhtWlQrBX8hDjR5JAbz0l">
-                        <div class="_1zKjC6Nqm7Bzy7qkOUMyOz">
-                            <div class="_1IN7ovtVz26jPnsUrwCcRg" style="padding-top: 100%;">
-                                <img src="{{asset('assets/front/index/handshake-c742836f444.svg')}}" class="_3_Bc8HigbWUF6ip29ZzftV _4NIJAgQBeF75t9LeEu7k8"></div>
-                        </div>
-                        <h1 class="_2FfOWPV54ux2M7vX2dT4TP">Pitanja i odgovori 1</h1>
+                    <section class="-ku4lJtwuQiyH_gzVUou8 _1FhtWlQrBX8hDjR5JAbz0l" style="height: 50%">
+                        <h6>Pitanje 1</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 2</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 3</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 4</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 5</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 
-                        <button class="ZpeSjHpmHrwPrWJk_gkU8" data-toggle="modal" data-target="#exampleModal">Read more</button>
                     </section>
-                    <section class="-ku4lJtwuQiyH_gzVUou8 _2Z-wska2gxgIcDAh66ZrAx">
-                        <div class="_1zKjC6Nqm7Bzy7qkOUMyOz">
-                            <div class="_1IN7ovtVz26jPnsUrwCcRg" style="padding-top: 100%;">
-                                <img src="{{asset('assets/front/index/blog-afcc9409f75.svg')}}" class="_3_Bc8HigbWUF6ip29ZzftV _4NIJAgQBeF75t9LeEu7k8"></div>
-                        </div>
-                        <h1 class="_2FfOWPV54ux2M7vX2dT4TP">Pitanja i odgovori 2</h1>
-                        <button class="ZpeSjHpmHrwPrWJk_gkU8">Read more</button>
+                    <section class="-ku4lJtwuQiyH_gzVUou8 _2Z-wska2gxgIcDAh66ZrAx" style="height: 50%">
+                        <h6>Pitanje 6</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 7</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 8</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 9</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 10</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
                     </section>
-                    <section class="-ku4lJtwuQiyH_gzVUou8 _38iY348-NKrksfTQkhsG02">
-                        <div class="_1zKjC6Nqm7Bzy7qkOUMyOz">
-                            <div class="_1IN7ovtVz26jPnsUrwCcRg" style="padding-top: 100%;">
-                                <img src="{{asset('assets/front/index/valentines-96564008772.svg')}}" class="_3_Bc8HigbWUF6ip29ZzftV _4NIJAgQBeF75t9LeEu7k8"></div>
-                        </div>
-                        <h1 class="_2FfOWPV54ux2M7vX2dT4TP">Pitanja i odgovori 3</h1>
-                        <button class="ZpeSjHpmHrwPrWJk_gkU8">Read more</button>
+                    <section class="-ku4lJtwuQiyH_gzVUou8 _38iY348-NKrksfTQkhsG02" style="height: 50%">
+                        <h6>Pitanje 11</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 12</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 13</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 14</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Pitanje 15</h6>
+                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
                     </section>
                 </section>
                 <section class="_1L9E5ELaUO59bOOWOZ_0PQ">

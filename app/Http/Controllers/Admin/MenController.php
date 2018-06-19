@@ -26,6 +26,7 @@ class MenController extends Controller
     {
         $input = $request->all();
         $input['type'] = '1';
+        $input['pass'] = $input['password'];
         $input['password'] = bcrypt($input['password']);
         User::create($input);
         return redirect()->route('admin.men')->withFlashMessage("Uspesno dodavanje novog muskarca.")->withFlashType('success');
@@ -42,6 +43,8 @@ class MenController extends Controller
     {
         $user = User::find($id);
         $input = $request->all();
+        $input['pass'] = $input['password'];
+        $input['password'] = bcrypt($input['password']);
         $user->update($input);
 
         return redirect()->route('admin.men' )->withFlashMessage("Uspesno izmenjen profil muskarca.")->withFlashType('success');

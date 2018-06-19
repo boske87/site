@@ -336,7 +336,7 @@
                                                         <li style="">
                                                             <a  href="{{route('/profil',$oneG->id)}}">
                                                                 <div class="menu-icon">
-                                                                    <img class="img-rounded" style="height:150px; border-radius: 50% !important;"  src="{{ Image::load('gallery/devojka'.$oneG->id.'/' . $oneG->images[0]->imageName, ['h' => 5]) }}" alt="example image"></div>
+                                                                    <img class="img-rounded" style="height:auto; border-radius: 50% !important;"  src="{{ Image::load('gallery/devojka'.$oneG->id.'/' . $oneG->images[0]->imageName, ['h' => 5]) }}" alt="example image"></div>
                                                             </a>
                                                             <div class="menu-text">{{$oneG->fullName}}
                                                                 <div class="menu-info">
@@ -470,6 +470,13 @@
                                 <form id="submitOfferTravel" class="" method="GET" action="" role="form">
                                     <input type="hidden" name="offerTypeForm" id="offerType" value="0">
                                 <div class="modal-body mx-3" id="offerDiv">
+                                    <div class="md-form mb-5">
+                                        <label data-error="wrong" data-success="right" for="form34">Uslovi putovanja</label>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown printer took
+                                            a galley of type and scrambled it to make a type specimen book.</p>
+
+                                    </div>
                                     <div class="md-form mb-5">
                                         <label data-error="wrong" data-success="right" for="form34">Grad</label>
                                         <input type="text" id="form34" name="cityTravel" class="form-control validate" required>

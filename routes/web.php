@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', ['as' => '/', 'uses' => 'IndexController@enter']);
-Route::get('/loginMain', ['as' => '/loginMain', 'uses' => 'IndexController@index']);
+Route::get('/loginMain', ['as' => '/loginMain', 'uses' => 'IndexController@index'])->middleware('basicAuth');
 Route::get('/logoutAll', ['as' => '/logoutAll', 'uses' => 'IndexController@logout']);
 Route::group(['middleware' => ['auth']], function () {
     Route::get('z/moj-profil', ['as' => '/moj-profil', 'uses' => 'GirlController@index']);
@@ -28,6 +28,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/offersGirlDetails/{offerId}', ['as' => '/offersGirlDetails', 'uses' => 'OffersController@offersGirlDetails']);
     Route::get('/acceptOffer/{offerId}', ['as' => '/acceptOffer', 'uses' => 'OffersController@acceptOffer']);
     Route::get('/deniedOffer/{offerId}', ['as' => '/deniedOffer', 'uses' => 'OffersController@deniedOffer']);
+
+    Route::get('/girl/finishOffer', ['as' => '/girl.finishOffer', 'uses' => 'OffersController@finishOffer']);
 
     Route::get('men/offers', ['as' => '/men.offers', 'uses' => 'ManController@manOffers']);
 

@@ -170,44 +170,7 @@
 
                 </div>
                 <div class="navbar-menu clearfix">
-
-                    <div class="vd_menu">
-                        <ul>
-                            <li class="line vd_bd-grey">
-                            </li>
-                            <li>
-                                <a href="{{route('/offersGirl')}}">
-                                    <span class="menu-icon entypo-icon"><i class="icon-mail"></i></span>
-                                    <span class="menu-text">Nove ponude</span>
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{route('/offersGirlAccepted')}}">
-                                    <span class="menu-icon"><i class="fa fa-archive"></i></span>
-                                    <span class="menu-text">Prihvacene ponude</span>
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{'/offersGirlDenied'}}">
-                                    <span class="menu-icon entypo-icon"><i class="icon-paperplane"></i></span>
-                                    <span class="menu-text">Odbijene ponude</span>
-                                </a>
-                            </li>
-
-                            <li class="line vd_bd-grey">
-                            </li>
-                            <li>
-                                <a href="{{route('/moj-profil')}}" >
-                                    <span class="menu-icon entypo-icon"><i class="icon-paperplane"></i></span>
-                                    <span class="menu-text">Moj profil</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                        <!-- Head menu search form ends -->         </div>
-
+                    @include('offer.par.side')
 
                 </div>
 
@@ -226,29 +189,18 @@
 
                         <div class="vd_title-section clearfix">
                             <div class="vd_panel-header">
-                                <h1>Nove Ponude</h1>
+                                <h1>{{isset($title) ? $title : 'Nove Ponude'}}</h1>
 
                             </div>
-                            @if (session('status'))
-                                <div class="alert alert-success">
-                                    {{ session('status') }}
-                                </div>
-                            @endif
                         </div>
                         <!-- vd_title-section -->
 
                         <div class="vd_content-section clearfix">
-                            <div class="panel widget light-widget" style="height: 70% !important;">
+                            <div class="panel widget light-widget">
 
-                                <div class="panel-heading no-title">
 
-                                    <!-- vd_panel-menu -->
 
-                                </div>
-                                <!-- vd_panel-heading -->
-
-                                <div class="panel-body">
-                                    <h2 class="mgtp--10"> Moje nove ponude </h2>
+                                <div class="table-responsive">
                                     <table class="table table-striped table-hover" style="height: 70% !important;">
                                         <thead>
                                         <tr>
