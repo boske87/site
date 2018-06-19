@@ -37,6 +37,8 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('men/offersAccepted', ['as' => '/men.offersAccepted', 'uses' => 'ManController@accOffers']);
     Route::get('men/offersDenied', ['as' => '/men.offersDenied', 'uses' => 'ManController@deniedOffers']);
+
+    Route::get('men/offersFinished', ['as' => '/men.offersFinished', 'uses' => 'ManController@offersFinished']);
 });
 Route::get('/logout', ['as' => '/logout', 'uses' => 'Admin\IndexController@logout']);
 Route::group(['prefix' => 'admin'], function () {

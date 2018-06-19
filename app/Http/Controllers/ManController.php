@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Offer;
+use App\OfferAll;
 use App\User;
 use Auth;
 use Illuminate\Http\Request;
@@ -125,12 +126,25 @@ class ManController extends Controller
         return view('search.profile', compact('user'));
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function manOffers(){
         $user = Auth::user();
 
         $offers = Offer::where('manId', $user->id)
             ->orderBy('created_at', 'DESC')
             ->get();
+
+
+        foreach ($offers as $key=>$offer){
+            $offerStatusGlob = OfferAll::where('offerId', $offer->id)
+                ->where('status', 2)->count();
+
+            if($offerStatusGlob >= $offer->maxGirls)
+                $offers[$key]->status = 2;
+        }
+
 
 
         return view('offerMan.offers', compact('offers', 'user'));
@@ -159,5 +173,10 @@ class ManController extends Controller
             ->get();
 //        dd($offers);
         return view('offerMan.denOffers', compact('offers', 'user'));
+    }
+
+
+    public function offersFinished(){
+
     }
 }
