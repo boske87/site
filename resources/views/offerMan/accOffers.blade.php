@@ -239,9 +239,9 @@
                                                             @if($offerOne->status == 0 )
                                                                     Ponuda je na cekanju
                                                                 @elseif($offerOne->status == 1 )
-                                                                    Odbijena
+                                                                    <p style="color: red">Odbijena</p>
                                                                 @else
-                                                                    Prihvacena
+                                                                <p style="color: green">Prihvacena</p>
                                                             @endif
 
                                                         </td>

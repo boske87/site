@@ -94,7 +94,6 @@
                             <i class="fa fa-ellipsis-v"></i>
                         </span>
 
-
                         </div>
                         <div class="vd_panel-menu visible-sm visible-xs">
                 	<span class="menu visible-xs" data-action="submenu">

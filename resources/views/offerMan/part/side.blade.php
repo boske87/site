@@ -23,6 +23,13 @@
             </a>
         </li>
 
+        <li>
+            <a href="{{'/men/offersFinished'}}">
+                <span class="menu-icon entypo-icon"><i class="icon-paperplane"></i></span>
+                <span class="menu-text">Zavrsene ponude</span>
+            </a>
+        </li>
+
         <li class="line vd_bd-grey">
         </li>
         <li>

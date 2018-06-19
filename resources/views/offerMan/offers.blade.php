@@ -226,8 +226,10 @@
                                         </tr>
                                         </thead>
                                         <tbody>
+                                        @if(isset($title))
                                         @foreach($offers as $oneOffer)
                                             @foreach($oneOffer->myOffers as $offerOne)
+                                                @if($oneOffer->status == 2  &&  $offerOne->status != 1  &&  $offerOne->status != 2)
                                                 <tr>
                                                     <td><a href="{{route('/profil',$offerOne->offerToGirl->id)}}" >{{$offerOne->offerToGirl->name}}</a></td>
                                                     <td>{{$oneOffer->timeOfferStart}}</td>
@@ -235,20 +237,47 @@
                                                     <td>{{ $oneOffer->offerType == 0 ? 'Izlazak' : 'Putovanje' }}</td>
                                                     <td>
                                                         @if($oneOffer->status == 2  &&  $offerOne->status != 1  &&  $offerOne->status != 2)
-                                                            Zavrsena ponuda
+                                                            <p style="color: blue">Zavrsena ponuda</p>
                                                         @elseif($offerOne->status == 0 )
-                                                            Ponuda je na cekanju
+                                                            <p style="color: darksalmon">Ponuda je na cekanju</p>
                                                         @elseif($offerOne->status == 1 )
-                                                            Odbijena
+                                                            <p style="color: red">Odbijena</p>
                                                         @else
-                                                            Prihvacena
+                                                            <p style="color: green">Prihvacena</p>
                                                         @endif
 
                                                     </td>
                                                     <td><a href="{{route('/men.offers.details', $oneOffer->id)}}">Detaljno</a></td>
                                                 </tr>
+
                                             @endforeach
                                         @endforeach
+                                        @else
+                                            @foreach($offers as $oneOffer)
+                                                @foreach($oneOffer->myOffers as $offerOne)
+                                                    <tr>
+                                                        <td><a href="{{route('/profil',$offerOne->offerToGirl->id)}}" >{{$offerOne->offerToGirl->name}}</a></td>
+                                                        <td>{{$oneOffer->timeOfferStart}}</td>
+                                                        <td>{{$oneOffer->place}}</td>
+                                                        <td>{{ $oneOffer->offerType == 0 ? 'Izlazak' : 'Putovanje' }}</td>
+                                                        <td>
+                                                            @if($oneOffer->status == 2  &&  $offerOne->status != 1  &&  $offerOne->status != 2)
+                                                                <p style="color: blue">Zavrsena ponuda</p>
+                                                            @elseif($offerOne->status == 0 )
+                                                                <p style="color: darksalmon">Ponuda je na cekanju</p>
+                                                            @elseif($offerOne->status == 1 )
+                                                                <p style="color: red">Odbijena</p>
+                                                            @else
+                                                                <p style="color: green">Prihvacena</p>
+                                                            @endif
+
+                                                        </td>
+                                                        <td><a href="{{route('/men.offers.details', $oneOffer->id)}}">Detaljno</a></td>
+                                                    </tr>
+                                                @endforeach
+                                            @endforeach
+                                        @endif
+
                                         </tbody>
                                     </table>
                                 </div>

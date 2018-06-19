@@ -147,8 +147,10 @@ class ManController extends Controller
 
 
 
+
         return view('offerMan.offers', compact('offers', 'user'));
     }
+
 
     public function manOffersDetails($offerId){
         $offer = Offer::find($offerId);
@@ -160,7 +162,6 @@ class ManController extends Controller
     public function accOffers(){
         $user = Auth::user();
         $offers = Offer::where('manId', $user->id)
-
             ->get();
 //        dd($offers);
         return view('offerMan.accOffers', compact('offers', 'user'));
@@ -176,7 +177,38 @@ class ManController extends Controller
     }
 
 
-    public function offersFinished(){
+    public function offersFinished()
+    {
+        $title = 'Zavrsene ponude';
+        $user = Auth::user();
 
+        $offersAll = Offer::where('manId', $user->id)
+            ->orderBy('created_at', 'DESC')
+            ->get();
+
+
+        foreach ($offersAll as $key=>$offer){
+            $offerStatusGlob = OfferAll::where('offerId', $offer->id)
+                ->where('status', 2)->count();
+
+            if($offerStatusGlob >= $offer->maxGirls){
+                $offers [$key]= $offer;
+                $offers[$key]->status = 2;
+            }
+
+        }
+
+
+//        foreach ($offers as $one) {
+//            foreach($one->myOffers as $offerOne){
+//                if($one->status == 2  &&  $offerOne->status != 1  &&  $offerOne->status != 2){
+//                    dd($offerOne);
+//                }
+//            }
+//        }
+
+
+
+        return view('offerMan.offers', compact('offers', 'user', 'title'));
     }
 }
