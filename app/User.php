@@ -41,12 +41,18 @@ class User extends Authenticatable
 
     public function offersGirlDen()
     {
+
         return $this->hasMany('App\OfferAll', 'girlId', 'id')->where('status',1);
     }
 
     public function offersGirlWait()
     {
         return $this->hasMany('App\OfferAll', 'girlId', 'id')->where('status',0);
+    }
+
+    public function offersGirlFin()
+    {
+        return $this->hasMany('App\OfferAll', 'girlId', 'id')->where('status',3);
     }
 
 

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\AddGirlRequest;
+use App\Offer;
+use App\OfferAll;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -14,6 +16,33 @@ class GirlController extends Controller
     {
         $items = User::where('type','0')
             ->get();
+
+        $offers = Offer::
+           orderBy('created_at', 'DESC')
+            ->get();
+
+
+        foreach ($offers as $key => $one) {
+
+            $offerStatusGlob = OfferAll::where('offerId', $one->id)
+                ->where('status', 2);
+
+
+
+
+            if($offerStatusGlob->count() >= $one->maxGirls){
+                Offer::where('id', $one->id)
+                    ->update(['status' => 3]);
+
+                foreach ($offerStatusGlob->get() as $oneOf ){
+                    OfferAll::where('offerId', $one->id)
+                    ->where('status', 0)
+                        ->update(['status' => 3]);
+                }
+
+            }
+
+        }
 
 
         return view('admin.girl.index', compact('items'));
