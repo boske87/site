@@ -330,7 +330,7 @@
                                         <div class="panel widget light-widget panel-bd-top">
                                             <div class="panel-heading no-title"> </div>
                                             <div class="panel-body" id="girlsDiv">
-                                                <div class="content-grid column-xs-3 column-sm-4 column-md-5 column-lg-6 height-xs-4">
+                                                <div class="content-grid column-xs-3 column-sm-4 column-md-5 column-lg-6 height-xs-4" style="width: 75%">
                                                     <ul class="list-wrapper">
                                                         @foreach($girls as $oneG)
                                                         <li style="">

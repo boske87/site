@@ -36,7 +36,7 @@
                         @else
                             <td style="color: green">Aktivan</td>
                         @endif
-                        <td><a href="">Pogledajte poslate ponude</a></td>
+                        <td><a href="{{route('admin.men.offers', $item->id)}}">Pogledajte poslate ponude</a></td>
                         <td class="cms-column-actions">
                             <div class="btn-group btn-group-xs cms-table-actions">
                                 <a href="{{ route('admin.men-id', $item->id) }}" type="button" class="btn btn-default"><span class="entypo entypo-pencil"></span></a>

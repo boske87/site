@@ -28,6 +28,7 @@
                     <th>Odbijene</th>
                     <th>Prihvacene</th>
                     <th>Na cekanju</th>
+                    <th>Zavrsene</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
@@ -46,6 +47,7 @@
                         <td><a href="{{route('admin.girl.offers', $item->id)}}">Pogledajte ponude</a></td>
                         <td>{{$item->offersGirlDen()->count()}}</td>
                         <td>{{$item->offersGirlAcc()->count()}}</td>
+                        <td>{{$item->offersGirlWait()->count()}}</td>
                         <td>{{$item->offersGirlWait()->count()}}</td>
                         <td class="cms-column-actions">
                             <div class="btn-group btn-group-xs cms-table-actions">

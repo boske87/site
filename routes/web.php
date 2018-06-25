@@ -75,6 +75,8 @@ Route::group(['prefix' => 'admin'], function () {
     //men
     Route::get('/girl/offers/{girlId}', ['as' => 'admin.girl.offers', 'uses' => 'Admin\GirlOffers\OfferController@getOffersById']);
     Route::get('/girl/offer/{offerId}', ['as' => 'admin.girl.offer', 'uses' => 'Admin\GirlOffers\OfferController@getOfferById']);
+
+    Route::get('/men/offers/{menId}', ['as' => 'admin.men.offers', 'uses' => 'Admin\ManOffer\ManOfferController@getOffersById']);
 });
 
 Auth::routes();
