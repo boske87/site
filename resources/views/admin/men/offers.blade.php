@@ -24,14 +24,14 @@
                     <th>Ponuda za</th>
                     <th>Tip ponude</th>
                     <th>Status ponude</th>
+                    <th>Vreme ponude</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($offers as $oneOffer)
-
+                @foreach($offers as $key=>$oneOffer)
                     @foreach($oneOffer->myOffers as $offerOne)
-                    <tr>
+                    <tr id="{{$key}}" style="background-color: {{ $key % 2 == 0 ? '#ffffff': '#adabab' }};">
                         <td><a href="{{route('admin.devojka',$offerOne->offerToGirl->id)}}" >{{$offerOne->offerToGirl->name}}</a></td>
                             <td style="color: red">{{ $oneOffer->offerType == 0 ? 'Izlazak' : 'Putovanje' }}</td>
                         <td>
@@ -44,6 +44,7 @@
                             @endif
 
                         </td>
+                        <td>{{$oneOffer->created_at}}</td>
                         <td class="cms-column-actions">
                             <div class="btn-group btn-group-xs cms-table-actions">
                                 <a href="{{ route('admin.girl.offer', $offerOne->offerId) }}" type="button" class="btn btn-default"><span class="entypo entypo-pencil"></span></a>

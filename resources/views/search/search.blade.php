@@ -53,7 +53,35 @@
     <!-- Responsive CSS -->
     <link href="{{ asset('assets/front/admin/theme-responsive.min.css')}}" rel="stylesheet" type="text/css">
 
+    <style>
+        .square {
+            float:left;
+            position: relative;
+            width: 90%;
+            padding-bottom : 90%; /* = width for a 1:1 aspect ratio */
+            margin:1.66%;
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+        }
 
+        .square2 {
+            float:left;
+            position: relative;
+            width: 30%;
+            margin:1.66%;
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+        }
+
+        .img_1-1{background-image:url('https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg');}
+        .img_1-2{background-image:url('https://farm7.staticflickr.com/6092/6227418584_d5883b0948.jpg');}
+        .img_1-3{background-image:url('https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg');}
+        .img_2-1{background-image:url('https://farm8.staticflickr.com/7163/6822904141_50277565c3.jpg');}
+        .img_2-2{background-image:url('https://farm7.staticflickr.com/6139/5986939269_10721b8017.jpg');}
+        .img_2-3{background-image:url('https://farm4.staticflickr.com/3165/5733278274_2626612c70.jpg');}
+    </style>
 
 
     <!-- for specific page in style css -->
@@ -330,26 +358,38 @@
                                         <div class="panel widget light-widget panel-bd-top">
                                             <div class="panel-heading no-title"> </div>
                                             <div class="panel-body" id="girlsDiv">
-                                                <div class="content-grid column-xs-3 column-sm-4 column-md-5 column-lg-6 height-xs-4" style="width: 75%">
-                                                    <ul class="list-wrapper">
-                                                        @foreach($girls as $oneG)
-                                                        <li style="">
-                                                            <a  href="{{route('/profil',$oneG->id)}}">
-                                                                <div class="menu-icon">
-                                                                    <img class="img-rounded" style="height:auto; border-radius: 50% !important;"  src="{{ Image::load('gallery/devojka'.$oneG->id.'/' . $oneG->images[0]->imageName, ['h' => 5]) }}" alt="example image"></div>
-                                                            </a>
-                                                            <div class="menu-text">{{$oneG->fullName}}
-                                                                <div class="menu-info">
-                                                                    <div class="menu-date">{{$oneG->city}}</div>
-                                                                    <div class="menu-action">
-                                                                            <input type="checkbox" id="girlCh" name="girlChec" value="{{$oneG->id}}">
-                                                                          </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                            @endforeach
 
-                                                    </ul>
+                                                @foreach($girls as $oneG)
+                                                    <div class="square2">
+                                                        <label style="display: block; text-align: center;">{{$oneG->fullName}}</label>
+                                                        <label style="display: block; text-align: center;">{{$oneG->city}}</label>
+                                                        <label style="display: block; text-align: center;"><input type="checkbox" id="girlCh" name="girlChec" value="{{$oneG->id}}"></label>
+                                                    <div style="background-image:url('{{ Image::load('gallery/devojka'.$oneG->id.'/' . $oneG->images[0]->imageName, ['h' => 5]) }}'); " class="square img_1-1">
+
+                                                    </div>
+                                                    </div>
+                                                @endforeach
+                                                <div class="content-grid column-xs-3 column-sm-4 column-md-5 column-lg-6 height-xs-4" style="width: 100%">
+
+                                                    {{--<ul class="list-wrapper">--}}
+                                                        {{--@foreach($girls as $oneG)--}}
+                                                        {{--<li style="">--}}
+                                                            {{--<a  href="{{route('/profil',$oneG->id)}}">--}}
+                                                                {{--<div class="menu-icon">--}}
+                                                                    {{--<img class="img-rounded" style="height:auto; border-radius: 50% !important;"  src="{{ Image::load('gallery/devojka'.$oneG->id.'/' . $oneG->images[0]->imageName, ['h' => 5]) }}" alt="example image"></div>--}}
+                                                            {{--</a>--}}
+                                                            {{--<div class="menu-text">{{$oneG->fullName}}--}}
+                                                                {{--<div class="menu-info">--}}
+                                                                    {{--<div class="menu-date">{{$oneG->city}}</div>--}}
+                                                                    {{--<div class="menu-action">--}}
+                                                                            {{--<input type="checkbox" id="girlCh" name="girlChec" value="{{$oneG->id}}">--}}
+                                                                          {{--</div>--}}
+                                                                {{--</div>--}}
+                                                            {{--</div>--}}
+                                                        {{--</li>--}}
+                                                            {{--@endforeach--}}
+
+                                                    {{--</ul>--}}
                                                 </div>
 
                                                 <!-- content-grid -->
@@ -426,7 +466,7 @@
 
                                     <div class="md-form mb-5">
                                         <label data-error="wrong" data-success="right" for="form32">Broj devojaka</label>
-                                        <input type="text" id="form32" name="girlsNumber" class="form-control validate" required>
+                                        <input type="text" id="form32GirlNum" name="girlsNumber" class="form-control validate" required>
 
                                     </div>
 
@@ -613,7 +653,15 @@
 
         $( "#form32timeRange" ).change(function() {
             var range = $(this).val();
-            range = range * 1000;
+            var girlNum = $('#form32GirlNum').val();
+            range = range * 1000 * girlNum;
+            $('#divPrice').html('<h4 style="margin-top: 5%;color: red;" >Cena je '+range+'din</h4>');
+        });
+
+        $( "#form32GirlNum" ).change(function() {
+            var range = $(this).val();
+            var girlNum = $('#form32GirlNum').val();
+            range = range * 1000 * girlNum;
             $('#divPrice').html('<h4 style="margin-top: 5%;color: red;" >Cena je '+range+'din</h4>');
         });
 

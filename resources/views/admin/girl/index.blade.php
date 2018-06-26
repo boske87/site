@@ -48,13 +48,12 @@
                         <td>{{$item->offersGirlDen()->count()}}</td>
                         <td>{{$item->offersGirlAcc()->count()}}</td>
                         <td>{{$item->offersGirlWait()->count()}}</td>
-                        <td>{{$item->offersGirlFin->count()}}</td>
+                        <td>{{$item->offersGirlFin()->count()}}</td>
                         <td class="cms-column-actions">
                             <div class="btn-group btn-group-xs cms-table-actions">
                                 <a href="{{ route('admin.devojka', $item->id) }}" type="button" class="btn btn-default"><span class="entypo entypo-pencil"></span></a>
                                 {!! Form::open(['method' => 'DELETE', 'route' => ['admin.devojke.delete', $item->id], 'onsubmit' => "return confirm('Are you sure you want to DELETE this item?')"]) !!}
-                                <button type="submit" class="btn btn-default"><span class="entypo entypo-cross"></span></button>
-                                {!! Form::close() !!}
+                                <button type="submit" class="bt185
                             </div>
                         </td>
                     </tr>
