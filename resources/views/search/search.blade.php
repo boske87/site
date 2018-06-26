@@ -360,6 +360,7 @@
                                             <div class="panel-body" id="girlsDiv">
 
                                                 @foreach($girls as $oneG)
+                                                    <a  href="{{route('/profil',$oneG->id)}}">
                                                     <div class="square2">
                                                         <label style="display: block; text-align: center;">{{$oneG->fullName}}</label>
                                                         <label style="display: block; text-align: center;">{{$oneG->city}}</label>
@@ -368,6 +369,7 @@
 
                                                     </div>
                                                     </div>
+                                                    </a>
                                                 @endforeach
                                                 <div class="content-grid column-xs-3 column-sm-4 column-md-5 column-lg-6 height-xs-4" style="width: 100%">
 
