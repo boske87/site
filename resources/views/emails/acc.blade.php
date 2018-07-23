@@ -1,0 +1,1 @@
+Vasa ponuda je prihvacena.

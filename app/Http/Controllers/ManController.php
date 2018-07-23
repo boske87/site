@@ -53,6 +53,10 @@ class ManController extends Controller
             $girls = $girls->where('city','like', '%' . $input['location'] . '%');
         }
 
+        if(isset($input['stars']) && !empty($input['stars'])) {
+            $girls = $girls->where('stars','>=', $input['stars']);
+        }
+
         $girls = $girls->get();
 
         foreach ($girls as $key=>$oneG){

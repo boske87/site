@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Offer;
 use App\OfferAll;
+use App\User;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class OffersController extends Controller
 {
@@ -21,10 +23,13 @@ class OffersController extends Controller
         foreach ($offers as $key=>$offer){
             $offerStatusGlob = OfferAll::where('offerId', $offer->id)
                 ->where('status', 2)->count();
+            $oneOffer = Offer::find($offer->offerId);
 
-            if($offerStatusGlob >= $offer->maxGirls)
+            if($offerStatusGlob >= $oneOffer->maxGirls)
                 unset($offers[$key]);
         }
+
+
 
 
         return view('offer.offers', compact('offers'));
@@ -56,13 +61,27 @@ class OffersController extends Controller
             ->where('girlId', Auth::user()->id)
             ->update(['status' => 2]);
 
+        $oneOffer = Offer::find($offerId);
+        $user = User::find($oneOffer->manId)->toArray();
+        Mail::send('emails.acc', $user , function ($message) use ($user)  {
+            $message->from('office@izvedime.com', 'Izvedi me');
+            $message->to($user['email'])->subject('Ponuda je prihvacena');
+        });
+
         return redirect('offersGirl')->with('status', 'Ponuda je prihvacena');
     }
 
     public function deniedOffer($offerId) {
-        OfferAll::where('offerId', $offerId)
+        $offers = OfferAll::where('offerId', $offerId)
             ->where('girlId', Auth::user()->id)
             ->update(['status' => 1]);
+
+        $oneOffer = Offer::find($offerId);
+        $user = User::find($oneOffer->manId)->toArray();
+        Mail::send('emails.den', $user , function ($message) use ($user)  {
+            $message->from('office@izvedime.com', 'Izvedi me');
+            $message->to($user['email'])->subject('Ponuda je odbijena');
+        });
         return redirect('offersGirl')->with('status', 'Ponuda je odbijena');
     }
 
@@ -100,6 +119,8 @@ class OffersController extends Controller
             ->orderBy('created_at', 'DESC')
             ->get();
 
+
+
         return view('offer.denOffers', compact('offers'));
     }
 
@@ -135,6 +156,11 @@ class OffersController extends Controller
         $offer = Offer::create($input);
 
         foreach ($request->input('girlsId') as $oneGirl) {
+            $user = User::find($oneGirl)->toArray();
+            Mail::send('emails.received', $user , function ($message) use ($user)  {
+                $message->from('office@izvedime.com', 'Izvedi me');
+                $message->to($user['email'])->subject('Nova ponuda');
+            });
             $inputOffers = array(
                 'offerId' => $offer->id,
                 'girlId' => $oneGirl,

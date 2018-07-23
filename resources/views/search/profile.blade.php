@@ -2,10 +2,8 @@
 <!-- saved from url=(0064)http://www.venmond.com/demo/vendroid/pages-user-profile-form.php -->
 <html class=" js no-touch no-mobile no-phone no-tablet mobilegradea" style=""><!--<![endif]--><!-- Specific Page Data --><!-- End of Data --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>User Profile Form HTML Template - Responsive Multipurpose Admin Templates | Vendroid</title>
-    <meta name="keywords" content="HTML5 Template, CSS3, All Purpose Admin Template, Vendroid">
-    <meta name="description" content="User Profile Form - Responsive Admin HTML Template">
-    <meta name="author" content="Venmond">
+    <title>User Profile</title>
+
 
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -291,6 +289,10 @@
                                                                         <tr>
                                                                             <td style="width:60%;">Status</td>
                                                                             <td><span class="label label-success">Active</span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:60%;">Zvezdice</td>
+                                                                            <td><span class="label label-success">{{isset($user->stars) ? $user->stars : 0}}</span></td>
                                                                         </tr>
 
                                                                         </tbody>

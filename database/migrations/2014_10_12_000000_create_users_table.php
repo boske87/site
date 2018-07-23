@@ -26,6 +26,7 @@ class CreateUsersTable extends Migration
             $table->float('height')->nullable();
             $table->string('phone')->nullable();
             $table->string('job')->nullable();
+            $table->string('stars')->nullable();
             $table->string('lang')->nullable();
             $table->boolean('status');
             $table->rememberToken();

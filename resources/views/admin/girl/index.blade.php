@@ -28,7 +28,7 @@
                     <th>Odbijene</th>
                     <th>Prihvacene</th>
                     <th>Na cekanju</th>
-                    <th>Zavrsene</th>
+                    <th>Zakasnela</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
@@ -53,7 +53,8 @@
                             <div class="btn-group btn-group-xs cms-table-actions">
                                 <a href="{{ route('admin.devojka', $item->id) }}" type="button" class="btn btn-default"><span class="entypo entypo-pencil"></span></a>
                                 {!! Form::open(['method' => 'DELETE', 'route' => ['admin.devojke.delete', $item->id], 'onsubmit' => "return confirm('Are you sure you want to DELETE this item?')"]) !!}
-                                <button type="submit" class="bt185
+                                <button type="submit" class="btn btn-default"><span class="entypo entypo-cross"></span></button>
+                                {!! Form::close() !!}
                             </div>
                         </td>
                     </tr>

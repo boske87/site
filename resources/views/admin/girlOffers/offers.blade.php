@@ -37,6 +37,8 @@
                                 Ponuda je na cekanju
                             @elseif($item->status == 1 )
                                 Odbijena
+                            @elseif($item->status == 3 )
+                                Zakasnela
                             @else
                                 Prihvacena
                             @endif

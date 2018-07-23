@@ -118,6 +118,14 @@
                                 {!! $errors ->first('phone', '<span class="help-block">:message</span>') !!}
                             </div>
                         </div>
+
+                        <div class="form-group{!! $errors ->has('stars') ? ' has-error' : '' !!}">
+                            {!! Form::label('stars', 'Broj zvezdica', ['class' => 'col-sm-2 control-label']) !!}
+                            <div class="col-sm-10">
+                                {!! Form::number('stars', isset($item->stars) ? $item->stars : 0, ['class' => 'form-control']) !!}
+                                {!! $errors ->first('stars', '<span class="help-block">:message</span>') !!}
+                            </div>
+                        </div>
                     </fieldset>
                 </div>
                 <!-- =tab-2-->

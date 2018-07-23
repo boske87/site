@@ -3,8 +3,8 @@
 <html style="" class=" js no-touch no-mobile no-phone no-tablet mobilegradea"><!--<![endif]--><!-- Specific Page Data --><!-- End of Data --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>User Profile Pages HTML Template - Responsive Multipurpose Admin Templates | Vendroid</title>
-    <meta name="keywords" content="HTML5 Template, CSS3, All Purpose Admin Template, Vendroid">
-    <meta name="description" content="User Profile Pages - Responsive Admin HTML Template">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
     <meta name="author" content="Venmond">
     <meta name="csrf-token" content="{!! csrf_token() !!}" />
     <!-- Set the viewport width to device width for mobile -->
@@ -322,6 +322,12 @@
                                                     <input type="number" value="{{isset($input['toWeight']) && !empty($input['toWeight']) ? $input['toWeight'] : ''}}" name="toWeight" id="datepicker-to" />
                                                 </div>
                                             </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Broj zvezdica</label>
+                                                <div class="col-sm-2 controls">
+                                                    <input type="number" value="{{isset($input['stars']) && !empty($input['stars']) ? $input['stars'] : ''}}" name="stars" id="datepicker-from" />
+                                                </div>
+                                            </div>
 
                                             <div class="form-group">
                                                 <label class="col-sm-2 control-label">Jezik</label>
@@ -364,12 +370,15 @@
                                                     <div class="square2">
                                                         <label style="display: block; text-align: center;">{{$oneG->fullName}}</label>
                                                         <label style="display: block; text-align: center;">{{$oneG->city}}</label>
+                                                    </a>
                                                         <label style="display: block; text-align: center;"><input type="checkbox" id="girlCh" name="girlChec" value="{{$oneG->id}}"></label>
+                                                    <a  href="{{route('/profil',$oneG->id)}}">
                                                     <div style="background-image:url('{{ Image::load('gallery/devojka'.$oneG->id.'/' . $oneG->images[0]->imageName, ['h' => 5]) }}'); " class="square img_1-1">
 
                                                     </div>
-                                                    </div>
                                                     </a>
+                                                    </div>
+
                                                 @endforeach
                                                 <div class="content-grid column-xs-3 column-sm-4 column-md-5 column-lg-6 height-xs-4" style="width: 100%">
 
@@ -655,13 +664,17 @@
 
         $( "#form32timeRange" ).change(function() {
             var range = $(this).val();
+            if(range<3)
+                range = 3;
             var girlNum = $('#form32GirlNum').val();
             range = range * 1000 * girlNum;
             $('#divPrice').html('<h4 style="margin-top: 5%;color: red;" >Cena je '+range+'din</h4>');
         });
 
         $( "#form32GirlNum" ).change(function() {
-            var range = $(this).val();
+            var range = $('#form32timeRange').val();
+            if(range<3)
+                range = 3;
             var girlNum = $('#form32GirlNum').val();
             range = range * 1000 * girlNum;
             $('#divPrice').html('<h4 style="margin-top: 5%;color: red;" >Cena je '+range+'din</h4>');
