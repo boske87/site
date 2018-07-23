@@ -368,7 +368,7 @@
                                                 @foreach($girls as $oneG)
                                                     <a  href="{{route('/profil',$oneG->id)}}">
                                                     <div class="square2">
-                                                        <label style="display: block; text-align: center;">{{$oneG->fullName}}</label>
+                                                        <label style="display: block; text-align: center;">{{$oneG->name}}</label>
                                                         <label style="display: block; text-align: center;">{{$oneG->city}}</label>
                                                     </a>
                                                         <label style="display: block; text-align: center;"><input type="checkbox" id="girlCh" name="girlChec" value="{{$oneG->id}}"></label>
