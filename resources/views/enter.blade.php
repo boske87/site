@@ -43,7 +43,7 @@
                     </div>
                 </section>
 
-                <div class="_1GeysK5RYDCG2MldPvAdS3"><iframe width="0" height="0" scrolling="No" frameborder="0" marginwidth="0" marginheight="0" src="./datingdirect.com dating_ Single_ Meet Other Singles Looking For Love - Free Signup_files/saved_resource.html"></iframe></div>
+                <div class="_1GeysK5RYDCG2MldPvAdS3"><iframe width="0" height="0" scrolling="No" frameborder="0" marginwidth="0" marginheight="0" src="{{ asset('assets/front/index/saved_resource.html')}}"></iframe></div>
                 <img src="./datingdirect.com dating_ Single_ Meet Other Singles Looking For Love - Free Signup_files/tr.gif" style="display: none;">
             </div>
         </div>

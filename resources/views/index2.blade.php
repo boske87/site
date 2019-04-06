@@ -47,7 +47,7 @@
                     </div>
                 </section>
                 <section class="_3FzdflqsNbVCTTk9nAghhA" id="charter-frame">
-                    <section class="-ku4lJtwuQiyH_gzVUou8 _1FhtWlQrBX8hDjR5JAbz0l" style="height: 50%">
+                    <section class="-ku4lJtwuQiyH_gzVUou8 _1FhtWlQrBX8hDjR5JAbz0l" style="height: 100%">
                         <h6>Pitanje 1</h6>
                         <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
@@ -65,7 +65,7 @@
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 
                     </section>
-                    <section class="-ku4lJtwuQiyH_gzVUou8 _2Z-wska2gxgIcDAh66ZrAx" style="height: 50%">
+                    <section class="-ku4lJtwuQiyH_gzVUou8 _2Z-wska2gxgIcDAh66ZrAx" style="height: 100%">
                         <h6>Pitanje 6</h6>
                         <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
@@ -83,7 +83,7 @@
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 
                     </section>
-                    <section class="-ku4lJtwuQiyH_gzVUou8 _38iY348-NKrksfTQkhsG02" style="height: 50%">
+                    <section class="-ku4lJtwuQiyH_gzVUou8 _38iY348-NKrksfTQkhsG02" style="height: 100%">
                         <h6>Pitanje 11</h6>
                         <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
@@ -126,7 +126,7 @@
                          </div>
                     <div class="_2_ptFwesUuR1fmO7l3Oxfp">© 2018 </div>
                 </section>
-                <div class="_1GeysK5RYDCG2MldPvAdS3"><iframe width="0" height="0" scrolling="No" frameborder="0" marginwidth="0" marginheight="0" src="./datingdirect.com dating_ Single_ Meet Other Singles Looking For Love - Free Signup_files/saved_resource.html"></iframe></div>
+                <div class="_1GeysK5RYDCG2MldPvAdS3"><iframe width="0" height="0" scrolling="No" frameborder="0" marginwidth="0" marginheight="0" src="{{ asset('assets/front/index/saved_resource.html')}}"></iframe></div>
                 <img src="./datingdirect.com dating_ Single_ Meet Other Singles Looking For Love - Free Signup_files/tr.gif" style="display: none;">
             </div>
         </div>

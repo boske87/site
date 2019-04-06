@@ -483,7 +483,7 @@
 
                                     <div class="md-form mb-5">
                                         <label data-error="wrong"  data-success="right" for="form32">Vremenski period</label>
-                                        <input type="number" name="timeRange" id="form32timeRange" min="3" class="form-control validate" required>
+                                        <input type="number" name="timeRange" id="form32timeRange" class="form-control validate" required>
 
                                     </div>
 

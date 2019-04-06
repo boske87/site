@@ -40,14 +40,18 @@ class LoginController extends Controller
 
     protected function redirectTo()
     {
-        if(Auth::user()->type == 0) {
-            return 'z/moj-profil';
-        } else if(Auth::user()->type == 1)
-        {
-            return 'm/moj-profil';
-        } else {
 
+        if (Auth::user()->admin == 1) {
+            return 'admin/';
+        } else {
+            if(Auth::user()->type == 0) {
+                return 'z/moj-profil';
+            } else if(Auth::user()->type == 1)
+            {
+                return 'm/moj-profil';
+            }
         }
+
 
     }
 

@@ -41,7 +41,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('men/offersFinished', ['as' => '/men.offersFinished', 'uses' => 'ManController@offersFinished']);
 });
 Route::get('/logout', ['as' => '/logout', 'uses' => 'Admin\IndexController@logout']);
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     # Save reorder
     Route::post('reorderSave/{tableName}', 'Admin\GirlController@reorderSave');
     Route::get('/', 'Admin\IndexController@index');

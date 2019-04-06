@@ -183,6 +183,7 @@ class ManController extends Controller
 
     public function offersFinished()
     {
+        $offers  = array();
         $title = 'Zavrsene ponude';
         $user = Auth::user();
 
