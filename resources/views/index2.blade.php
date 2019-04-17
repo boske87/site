@@ -48,57 +48,40 @@
                 </section>
                 <section class="_3FzdflqsNbVCTTk9nAghhA" id="charter-frame">
                     <section class="-ku4lJtwuQiyH_gzVUou8 _1FhtWlQrBX8hDjR5JAbz0l" style="height: 100%">
-                        <h6>Pitanje 1</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 2</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 3</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 4</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 5</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h6>Da li ste razmisljali kolilo je bitno biti u pravom okruzenju. Koliko je lakse kada imate nekog ko moze da vam pomogne ili vas samo preporuci  U danasnjem svetu kontakti vrede vise nego bilo sta drugo.
+                            Da li ste razmisljali da poboljsate svoje okruzenje i budete u mogućnosti uz to i da zaradite lepu apanazu za druzenje sa uspesnim ljudima i uz zagarantovanu diskreciju.
+                            MSC je upravo to, spoj lepog i korisnog gde ce svi njegovi clanovi biti pobednici.</h6>
 
+                        <h6>Po cemu se Izvedi me razlikuje i sta su glavne prednosti u odnosu na druge dating sajtove.</h6>
+                        <p style="font-size: 10px">Glavna razlika i prednost je da se Izvedi me ne bavi kvantitetom vec kvalitetom.
+                            <br> - Da bi se doslo do kvaliteta MSC je odlucio da se principijalno razlikuje od skoro svih ostalih dating sajtova na ovom području i sire.
+                            <br> - Prva i osnovna prednost je da su svi clanovi (muski i zenski) MSC-a samo osobe koje su prosle intervju, sto znaci da niko sam ne moze da se uclani na MSC, a cak ni da ga poseti, zbog lozinke koja je neophodna da se uopste udje na websajt.
+                            <br> - Druga prednost je da je broj clanova ogranicen na 500 i da pruza clanovima osecaj diskrecije kao ni jedan drugi sajt.
+                            <br> - Treca prednost je da su svi podaci licno uneseni u bazu podataka, a da su sve slike napravljene neposredno pre uclanjivanja. Tim nacinom na MSC-u nema mogucnosti da slike budu lazne, fotosopovane i slicno.
+                            <br> - Cetvrta prednost je sigurnost da se pored upoznavanja unapred zna apanaza koju bi devojka dobila odnosno muskarac donirao.
+                            <br> - Tako se zatvara ceo My Secret Club u kome bi svi trebali da budu zadovoljni i jos bitnije sigurni, a opet nevidljivi za sve osobe koji nisu clanovi.</p>
                     </section>
                     <section class="-ku4lJtwuQiyH_gzVUou8 _2Z-wska2gxgIcDAh66ZrAx" style="height: 100%">
-                        <h6>Pitanje 6</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 7</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 8</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 9</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 10</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h5>1. Ko ima pristup sajtu?</h5>
+                        <p style="font-size: 10px">Samo clanovi</p>
+                        <h5>Kako se postaje clan?</h5>
+                        <p style="font-size: 10px">Napravi se zahtev za intervju, preko e-maila, a posle uspesnog intervjua se naprave slike i popuni profil.</p>
+                        <h5>Da li se clanarina naplacaje?</h5>
+                        <p style="font-size: 10px">Ne</p>
+                        <h5>Da li mogu da donesem svoju sliku?</h5>
+                        <p style="font-size: 10px">Ne, 2 tipske slike moraju da se naprave neposredno pre uclanjivanja, da bi slike bile sto verodostojnije.</p>
+                        <h5>Da li znam gde mesto izlazka, trajanje izlaska, visinu apanaze?</h5>
+                        <p style="font-size: 10px">Da, svaki formular koji budete dobili sa muske strane jasno navodi, gde se izlazi, koji vremenski raspon i visinu apanaze.</p>
 
                     </section>
                     <section class="-ku4lJtwuQiyH_gzVUou8 _38iY348-NKrksfTQkhsG02" style="height: 100%">
-                        <h6>Pitanje 11</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 12</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 13</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 14</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h6>Pitanje 15</h6>
-                        <p style="font-size: 10px">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h5>Da li postoji minimalna visina apanaze?</h5>
+                        <p style="font-size: 10px">Da, minimlna apanaza je 3000 din, za 3 sata druzenja ili manje. Svaki sledeci sat je ekstra 1000din.</p>
+                        <h5>Da li moram da prihvatim kada dobijem ponudu!</h5>
+                        <p style="font-size: 10px">Ne, devojka nema obavezu da prihvati ponudu.</p>
+                        <h5>Sta ukoliko neko ne zeli da plati apanazu po dogovoru?</h5>
+                        <p style="font-size: 10px">Izvedi me ce isplatiti apanazu, a druga strana ce biti najverovatnije automatski iskljucena sa sajta.</p>
+
 
                     </section>
                 </section>
@@ -107,18 +90,15 @@
                         <div class="_3aMRnRspqfE9tPHnBz0NyB pPCS_XnXQspKjEBFV9wed _3vU_GEy4geVEw2Wdh-Md0_ _3oP5WCHmg_6pZpGHglwsuK">
                             <h2 class="_2s7pAG-SJx-1h1VnWUMb0U">About</h2>
                             <ul class="_3j7RggdhYuXbK7KZMzr1zs">
-                                <li><a href="" title="DatingDirect.com singles nights &amp; events" target="_blank">events</a></li>
-                                <li><a href="" title="Help" target="_blank">Help</a></li>
-                                <li><a href="" title="Advertising" target="_blank">Advertising</a></li>
-                                <li><a href="" title="Affiliation" target="_blank">Affiliation</a></li>
-                                <li><a href="" title="Press" target="_blank">Press</a></li>
+                                <li><a href="" title="DatingDirect.com singles nights &amp; events" target="_blank"></a></li>
+                                <li><a href="" title="Help" target="_blank"></a></li>
+                                <li><a href="" title="Advertising" target="_blank"></a></li>
+                                <li><a href="" title="Affiliation" target="_blank"></a></li>
+                                <li><a href="" title="Press" target="_blank"></a></li>
                             </ul>
                         </div>
                         <div class="_3aMRnRspqfE9tPHnBz0NyB pPCS_XnXQspKjEBFV9wed _3vU_GEy4geVEw2Wdh-Md0_ _3oP5WCHmg_6pZpGHglwsuK">
-                            <h2 class="_2s7pAG-SJx-1h1VnWUMb0U">Other services</h2>
-                            <ul class="_3j7RggdhYuXbK7KZMzr1zs">
-                                <li><a href="https://www.datingdirectaffinity.com/" title="Compatibility matching with DatingDirectAffinity" target="_blank">Compatibility matching with DatingDirectAffinity</a></li>
-                            </ul>
+
                         </div>
                         <div class="_3aMRnRspqfE9tPHnBz0NyB pPCS_XnXQspKjEBFV9wed _3vU_GEy4geVEw2Wdh-Md0_ xBv21W40CG0hU1p73MquM">
 
