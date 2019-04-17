@@ -114,7 +114,7 @@
                 <div class="vd_top-nav vd_nav-width  ">
                     <div class="vd_panel-header">
                         <div class="logo">
-                            <a href="http://www.venmond.com/demo/vendroid/index.php"></a>
+                            <a href="">Izvedi me</a>
                         </div>
                         <!-- logo -->
                         <div class="vd_panel-menu  hidden-sm hidden-xs" data-intro="&lt;strong&gt;Minimize Left Navigation&lt;/strong&gt;&lt;br/&gt;Toggle navigation size to medium or small size. You can set both button or one button only. See full option at documentation." data-step="1">
@@ -207,7 +207,7 @@
                 <div class="vd_menu vd_navbar-bottom-widget">
                     <ul>
                         <li>
-                            <a href="http://www.venmond.com/demo/vendroid/pages-logout.php">
+                            <a href="">
                                 <span class="menu-icon"><i class="fa fa-sign-out"></i></span>
                                 <span class="menu-text">Logout</span>
                             </a>
