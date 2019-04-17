@@ -28,7 +28,7 @@
                     <th>Odbijene</th>
                     <th>Prihvacene</th>
                     <th>Na cekanju</th>
-                    <th>Zakasnela</th>
+                    <th>Zakasnila</th>
                     <th>Actions</th>
                 </tr>
                 </thead>

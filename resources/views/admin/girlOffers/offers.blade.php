@@ -38,7 +38,7 @@
                             @elseif($item->status == 1 )
                                 Odbijena
                             @elseif($item->status == 3 )
-                                Zakasnela
+                                Zakasnila
                             @else
                                 Prihvacena
                             @endif
