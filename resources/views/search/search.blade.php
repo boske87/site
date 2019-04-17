@@ -114,7 +114,7 @@
                 <div class="vd_top-nav vd_nav-width  ">
                     <div class="vd_panel-header">
                         <div class="logo">
-                            <a href="">Izvedi me</a>
+                            <a href="" style="font-size: 17px">IZVEDI ME</a>
                         </div>
                         <!-- logo -->
                         <div class="vd_panel-menu  hidden-sm hidden-xs" data-intro="&lt;strong&gt;Minimize Left Navigation&lt;/strong&gt;&lt;br/&gt;Toggle navigation size to medium or small size. You can set both button or one button only. See full option at documentation." data-step="1">
